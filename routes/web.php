@@ -30,6 +30,10 @@ Route::get('/login',function () {
     return Inertia::render('login');
 });
 
+Route::get('/My-orders',function(){
+    return Inertia::render('MyOrder');
+});
+
 
 
 
