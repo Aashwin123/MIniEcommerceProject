@@ -31,6 +31,7 @@ const handleLogout = () => {
       <Link href="/products" class="hover:text-blue-200">Products</Link>
       <Link href="/cart" class="hover:text-blue-200">Cart</Link>
       <Link href="/admin" class="hover:text-blue-200">Admin</Link>
+      
 
       <template v-if="!isAuthenticated">
       <Link href="/login" class="hover:text-blue-200">Login</Link>
@@ -38,6 +39,7 @@ const handleLogout = () => {
       </template>
 
       <template v-else>
+      <Link href="/My-orders" class="hover:text-blue-200">MyOrders</Link>
       <button
       @click="handleLogout"
       class="bg-red-500 px-3 py-1 rounded-lg hover:bg-red-600 transition">
